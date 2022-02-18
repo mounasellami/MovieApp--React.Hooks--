@@ -34,7 +34,7 @@ const AddMovie = ({addMovie}) => {
   return (
     <div>
       <div className='Add-btn-container'> 
-        <button className='Add-btn card movies-list'  onClick={openModal}>+</button>
+        <button className='Add-btn'  onClick={openModal}>+</button>
         <Modal
           className='add-modal'
           isOpen={modalIsOpen}

@@ -1,15 +1,14 @@
 .Add-btn {
-  border-radius: 25px;
+  border-radius: 5px;
   background-color: #fe4141;
   border: transparent;
   color: white;
   font-size: 300px;
-  padding: 8px 20px;
-  /* margin: 30px 0 30px 20px; */
   cursor: pointer;
-  width: 260px;
-  height: 550px;
+  width: 245px;
+  height: 649px;
   box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3);
+  margin: 12%;
 }
 .Add-btn:focus {
   outline: 0;

@@ -33,18 +33,20 @@ const NavBar=({setFilterByName, filterByRate, setFilterByRate}) => {
             <Nav.Link href="#My list">My list</Nav.Link>
           </Nav>
          
-          <Nav>  
-           
+          <Nav>             
             <Form inline className="searchBox filters">
               <FormControl className="searchTitle" type="text" placeholder="Title" onChange={(e)=>setFilterByName(e.target.value)} />
               {/* <Button variant="danger">Search</Button> */}
               <FormControl className="icon-search"  value="Rechercher"  type="submit" />
-
             </Form>
- 
+          </Nav>
 
+          <Nav>
+            <Rate setFilterByRate={setFilterByRate} rating={filterByRate} />
+          </Nav>
 
-            {/* <NavDropdown className='justify-content-end' 
+          <Nav>
+            <NavDropdown className='justify-content-end' 
                          align="end"
                          width="52px"
                          height="32px"
@@ -57,7 +59,7 @@ const NavBar=({setFilterByName, filterByRate, setFilterByRate}) => {
                               />
                             </div>
                           }  
-              >
+            >
               <NavDropdown.Item href="#/Wafa">
                 <img  className="imgThumbnail" 
                       src={WhosWatchingWafa}
@@ -88,10 +90,7 @@ const NavBar=({setFilterByName, filterByRate, setFilterByRate}) => {
               <NavDropdown.Item href="#/help Center">help Center</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="#/Sign out">Sign out</NavDropdown.Item>
-            </NavDropdown> */}
-          </Nav>
-          <Nav>
-            <Rate setFilterByRate={setFilterByRate} rating={filterByRate} />
+            </NavDropdown>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
